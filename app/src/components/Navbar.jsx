@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/JameenWala2.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -27,18 +28,18 @@ const Navbar = () => {
 
         {/* Menu */}
         <div className="flex gap-8 text-gray-300 font-medium">
-          <p className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300">
+          <Link to="/" className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300 hover:bg-[#41464e]">
             Home
-          </p>{" "}
-          <p className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300">About Us</p>
-          <p className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300">
+          </Link>{" "}
+          <Link to="/about" className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300 hover:bg-[#41464e]">About Us</Link>
+          <Link to="/properties" className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300 hover:bg-[#41464e]">
             Properties
-          </p>
-          <p className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300">Services</p>
+          </Link>
+          <Link to="/services" className="px-3 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300 hover:bg-[#41464e]">Services</Link>
         </div>
 
-        <div className="text-gray-300 font-medium px-4 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300">
-          <p>Contact Us</p>
+        <div className="text-gray-300 font-medium px-4 py-2 rounded-lg bg-[#212429] text-white cursor-pointer transition-all duration-300 hover:bg-[#070707]">
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
     </div>
